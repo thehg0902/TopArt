@@ -159,20 +159,17 @@
     <div class="container">
       <p class="eyebrow">Reviews</p>
       <h2>What Markham says</h2>
-      <p class="quotes__stat">4.9 stars across 196 Google reviews.
-        <a href="https://www.google.com/maps/search/Top+Art+Roofing+Ltd+Markham+ON" rel="noopener">Read them on Google</a>.</p>
-      <div class="quotes" data-reveal>
-        <!-- Live Google-reviews widget planned (operator decision 2026-07-06);
-             cards below are placeholders until the widget is wired. -->
-        <blockquote class="quote">
-          <p>[PLACEHOLDER: live Google review card — widget pending]</p>
-        </blockquote>
-        <blockquote class="quote">
-          <p>[PLACEHOLDER: live Google review card — widget pending]</p>
-        </blockquote>
-        <blockquote class="quote">
-          <p>[PLACEHOLDER: live Google review card — widget pending]</p>
-        </blockquote>
+      <!-- Live Google-reviews widget slot (operator decision 2026-07-06):
+           when a provider is chosen, the embed replaces .reviews-band below.
+           Third-party embed = privacy-policy + CSP update in the same change. -->
+      <div class="reviews-band" data-reveal>
+        <p class="reviews-band__score" aria-hidden="true">4.9</p>
+        <p class="reviews-band__stars" aria-hidden="true">★★★★★</p>
+        <p class="reviews-band__text">4.9 stars across 196 Google reviews —
+          earned one roof at a time.</p>
+        <a class="btn btn--ghost" href="https://www.google.com/maps/search/Top+Art+Roofing+Ltd+Markham+ON" rel="noopener">
+          Read our reviews on Google
+        </a>
       </div>
     </div>
   </section>
