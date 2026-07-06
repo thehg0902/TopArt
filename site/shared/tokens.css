@@ -1,0 +1,108 @@
+/* Design tokens — Top Art Roofing Ltd
+   Direction: "Precision Monochrome" (state/DECISIONS.md, Phase 2)
+   Contract: contracts/design-tokens.md v1.1.0
+   Warm off-white canvas, near-black charcoal ink, muted metallic gold.
+   Deviations from defaults: sharp radii (architectural direction),
+   generous --section-pad-y (premium whitespace). */
+
+@font-face {
+  font-family: 'Cinzel';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../assets/fonts/cinzel-latin-400-normal.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../assets/fonts/inter-latin-400-normal.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('../assets/fonts/inter-latin-600-normal.woff2') format('woff2');
+}
+
+:root {
+  /* Colors */
+  --color-primary: #1a1814;        /* charcoal black — buttons, headings, dark surfaces */
+  --color-primary-dark: #0d0c0a;   /* deepest black — hover, footer */
+  --color-accent: #8a6c22;         /* muted metallic gold — hairlines, labels (4.7:1 on bg) */
+  --color-bg: #faf9f6;             /* warm off-white canvas */
+  --color-surface: #ffffff;        /* cards, raised panels */
+  --color-text: #1a1814;
+  --color-text-muted: #5c5648;     /* 6.4:1 on bg */
+  --color-border: #e4e0d6;
+  --color-success: #2e6b3f;
+  --color-error: #a33326;
+
+  /* Typography — Cinzel display caps + Inter body; scale ratio 1.25 */
+  --font-heading: 'Cinzel', 'Times New Roman', serif;
+  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.25rem;
+  --text-xl: 1.563rem;
+  --text-2xl: 1.953rem;
+  --text-3xl: 2.441rem;
+  --text-hero: clamp(2.5rem, 5vw + 1rem, 4.25rem);
+  --leading-tight: 1.15;
+  --leading-normal: 1.6;
+  --leading-loose: 1.85;
+
+  /* Spacing — 4px base scale */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+  --space-9: 6rem;
+  --space-10: 8rem;
+  --space-11: 12rem;
+  --space-12: 16rem;
+
+  /* Layout — sharp architectural radii (deviation: premium, crisp edges) */
+  --container-max: 1200px;
+  --section-pad-y: clamp(4rem, 8vw, 7rem);
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-lg: 8px;
+  --radius-full: 999px;
+
+  /* Elevation — warm-neutral, restrained */
+  --shadow-sm: 0 1px 2px rgba(26, 24, 20, 0.06);
+  --shadow-md: 0 4px 16px rgba(26, 24, 20, 0.08);
+  --shadow-lg: 0 12px 40px rgba(26, 24, 20, 0.14);
+
+  /* Motion */
+  --duration-fast: 150ms;
+  --duration-base: 300ms;
+  --duration-slow: 600ms;
+  --ease-standard: cubic-bezier(0.2, 0, 0, 1);
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Dark sections (CTA band, footer, dark hero) opt in via data-theme. */
+[data-theme="dark"] {
+  --color-primary: #f5f2ec;        /* inverted: light buttons on dark */
+  --color-primary-dark: #ffffff;
+  --color-accent: #c9a961;         /* light gold — 8.3:1 on dark bg */
+  --color-bg: #121110;
+  --color-surface: #1b1917;
+  --color-text: #f5f2ec;
+  --color-text-muted: #b5aea0;
+  --color-border: #3a362f;
+  --color-success: #6fbf85;
+  --color-error: #e2796c;
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 12px 40px rgba(0, 0, 0, 0.6);
+}

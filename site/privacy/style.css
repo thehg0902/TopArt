@@ -1,0 +1,11 @@
+/* Privacy page styles — narrow reading column. */
+.legal { max-width: 42rem; }
+.legal h2 {
+  font-size: var(--text-xl);
+  margin-top: var(--space-7);
+}
+.legal p { color: var(--color-text-muted); }
+.legal__updated {
+  font-size: var(--text-sm);
+  margin-top: calc(-1 * var(--space-3));
+}

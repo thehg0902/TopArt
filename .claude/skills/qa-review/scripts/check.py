@@ -31,6 +31,7 @@ for f in html_files:
     for m in re.finditer(r'(?:src|href)="([^"#][^":]*?)"', text):
         ref = m.group(1)
         if ref.startswith(("http", "mailto:", "tel:", "//", "data:")): continue
+        ref = ref.split("#", 1)[0]  # cross-page anchors: validate the path part
         target = (f.parent / ref).resolve()
         if target.is_dir(): target = target / "index.html"
         if not target.exists():

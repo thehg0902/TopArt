@@ -12,28 +12,46 @@
 - Ideal customer:
 - Offer / guarantee / promo:
 - Mood (3-6 adjectives):
-- Never say / avoid:
+- Never say / avoid:cheap,
+<!-- suggested: fair/reasonable pricing recurs across reviews (Gord, Mindy) -->
+<!-- suggested: fast turnaround — "the work was done quickly" -->
+<!-- suggested: pleasant, professional crew — service-experience differentiator -->
+
 
 ## Vibe
-<!-- Optional. Describe the FEEL the website should have, in your own
-     words: sites you admire, energy, era, textures, "liquid glass over
-     dark video", anything. Drop reference images/screenshots into
-     client/assets-intake/vibe/ (committed with the repo so remote
-     machines see them too; compress to ~500KB each; they are context
-     only - never shipped, never copied into site/) and list them with
-     what to take from each:
-     - vibe/ref-header.png: this kind of glassy nav
-     - vibe/moodboard.jpg: the color feel, not the layout -->
+premium black and white and gold, slick no BS streight to the point
+quality first
 
 ## Overrides
+booking: placeholder
+     forms: placeholder
+     Primary action (call | book ), Target search
+       terms, Languages (en ) →
+       site-architecture
+       home page- hero1 and hero2 video plays insequence and repeat, about us, roofing education(why roofers are needed and why roofs need to be done), our work(photos)， contact.
+       page2 What we do - Roofing
+       Attic venting
+       Gutter installation
+       Gutter repair
+       Roof inspection
+       Roof installation
+       Roof repair
+       Skylight installation
+       Skylight repair
+       Roof damage repair
+       , Contact
+
+       page3 - contact, booking via formspree or calandly.
+       seo-technical (title tags).
+
+       generate any image assets needed below 10 credits
 <!-- Optional. Anything typed here BEATS the paste and the Auto section.
      Fill ONLY what you want to force - EMPTY VALUES ARE IGNORED.
      Pages accepts the markup syntax: home | hero | about / menu | menu-list
      Stack flag values are free text; known values with defined behavior:
        animation: gsap | css-only | none | placeholder
        3d: yes | no | placeholder
-       booking: calendly | none | placeholder
-       forms: formspree | none | placeholder
+
        email-marketing: brevo | none | placeholder
        analytics: ga4 | plausible | none | placeholder
        hero-media: video | loop | intro-loop | scroll-scrub | static
@@ -68,11 +86,11 @@
 - Payment methods:
 - Emergency / after-hours:
 - Testimonials:
-- Photos (what exists / what's needed):
+- Photos (what exists / what's needed): our recent work img1-6
 ### Conversion & SEO
-- Primary action:
-- Target search terms:
-- Languages:
+- Primary action:Click page from google
+- Target search terms:any roofing related search terms
+- Languages:english
 - Pages:
 - Domain:
 ### Integrations
@@ -110,10 +128,50 @@
 - Special requests:
 
 ## Business Profile Paste
-<!-- Paste anything below this line: GBP about panel, Google Maps listing
-     text, hours block, services list, reviews, the old website's text,
-     socials. Unstructured is fine. The system extracts facts into Auto. -->
+Top Art Roofing Ltd
+4.9196 Google reviews
+Roofing contractor in Markham, Ontario
+Directions
+Reviews
++3
+Top Art Roofing Ltd is a reputable roofing contractor in Markham, Ontario, specializing in a wide range of roofing services for residential and commercial properties. They are known for their quality workmanship and commitment to customer satisfaction.
+
+Address: 185 Manhattan Dr, Markham, ON L3P 7S9
+
+Phone: (416) 930-8939
+Hours:
+Open · Closes 10 p.m.
+Province: Ontario
+Suggest an edit · Own this business?
+Add missing information
+Add website
+
+
+
+Reviews
+Google reviews
+Gord Smith	"Quality, on time and fair pricing for the provided quality and service."
+Janet Lee	"Interaction with staff and crew of workers was pleasant and professional."
+Mindy Edwardson	"Prices were quite reasonable and the work was done quickly."
+View all Google reviews
+From Top Art Roofing Ltd
+"Shingles, Gutters ( aluminum) Flat roof"
 
 ## Auto (generated — do not hand-edit)
 <!-- Written by the system at Phase 0 (client-enrichment). Empty in the
      template. Corrections go in Overrides, never here. -->
+- name: Top Art Roofing Ltd  [paste][unconfirmed]
+- category/niche: Roofing contractor  [paste][unconfirmed]
+- phone: (416) 930-8939  [paste][confirmed]
+- address: 185 Manhattan Dr, Markham, ON L3P 7S9  [paste][confirmed]
+- hours: open until 10 p.m. (per-day granularity still open)  [paste][confirmed]
+- services: Shingles, Gutters (aluminum), Flat roof  [paste][unconfirmed]
+- market: residential and commercial properties  [paste][unconfirmed]
+- service area: Markham, Ontario  [paste][unconfirmed]
+- google-rating: 4.9 stars, 196 Google reviews  [paste][unconfirmed]
+- website: none on GBP listing ("Add website" prompt shown)  [paste][unconfirmed]
+
+### Testimonial candidates
+- Gord Smith: "Quality, on time and fair pricing for the provided quality and service."  [needs-approval]
+- Janet Lee: "Interaction with staff and crew of workers was pleasant and professional."  [needs-approval]
+- Mindy Edwardson: "Prices were quite reasonable and the work was done quickly."  [needs-approval]
