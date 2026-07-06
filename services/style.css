@@ -1,0 +1,74 @@
+/* Services page styles — service detail blocks, FAQ. */
+
+/* ---------- Service blocks (alternating split) ---------- */
+.services--detail .container {
+  display: grid;
+  gap: var(--space-9);
+}
+
+.service-block {
+  display: grid;
+  gap: var(--space-6);
+  align-items: center;
+}
+
+.service-block__media img {
+  aspect-ratio: 4 / 3;
+  width: 100%;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  border-bottom: 2px solid var(--color-accent);
+}
+
+.service-block__copy p {
+  color: var(--color-text-muted);
+}
+.service-block__copy .btn { margin-top: var(--space-2); }
+
+@media (min-width: 1024px) {
+  .service-block { grid-template-columns: 1fr 1fr; gap: var(--space-8); }
+  .service-block--flip .service-block__media { order: 2; }
+}
+
+/* ---------- FAQ (native details/summary) ---------- */
+.section--faq { background: var(--color-surface); }
+
+.faq {
+  display: grid;
+  gap: var(--space-3);
+  margin-top: var(--space-6);
+  max-width: 46rem;
+}
+
+.faq__item {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+}
+
+.faq__item summary {
+  padding: var(--space-4) var(--space-5);
+  font-weight: 600;
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-4);
+}
+.faq__item summary::-webkit-details-marker { display: none; }
+.faq__item summary::after {
+  content: "+";
+  color: var(--color-accent);
+  font-size: var(--text-lg);
+  line-height: 1;
+  flex: none;
+}
+.faq__item[open] summary::after { content: "–"; }
+
+.faq__item p {
+  padding: 0 var(--space-5) var(--space-5);
+  margin: 0;
+  color: var(--color-text-muted);
+}
