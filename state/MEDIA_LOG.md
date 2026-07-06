@@ -13,7 +13,8 @@ See contracts/media-log.md for format and rules.
 | gallery-05.webp | 2026-07-06 | image | operator | job photo: new-build roof framing | 0 | y | site/assets/images/gallery-05.webp | in-use |
 | gallery-06.webp | 2026-07-06 | image | operator | job photo: flat-roof re-deck + skylight | 0 | y | site/assets/images/gallery-06.webp | in-use |
 | logo.png | 2026-07-06 | image | operator | brand logo, alpha PNG | 0 | yes | site/assets/images/logo.png | in-use |
-| services-01.jpg | 2026-07-06 | image | operator | shingle course close-up, 4:3 | 0 | yes | - | planned |
-| services-02.jpg | 2026-07-06 | image | operator | aluminum eavestrough corner detail, 4:3 | 0 |yes | - | planned |
-| services-03.jpg | 2026-07-06 | image | operator | flat commercial roof membrane, golden hour, 4:3 | 0 | yes | - | planned |
-| about-static.jpg | 2026-07-06 | image | operator | ridge-line macro precision detail, 3:4 | 0 |yes | - | planned |
+| services-01.jpg | 2026-07-06 | image | cinematic_studio_2_5 | shingle course close-up, 4:3, job 67c8b97a | 2 | yes | site/assets/images/services-01.webp | in-use |
+| services-02.jpg | 2026-07-06 | image | cinematic_studio_2_5 | eavestrough corner detail, 4:3, job 95827c5a | 2 | yes | site/assets/images/services-02.webp | in-use |
+| services-03.jpg | 2026-07-06 | image | cinematic_studio_2_5 | flat roof v1, job cdd8f69a — off-brief (concrete plaza, no membrane) | 2 | yes | - | rejected |
+| services-03.jpg | 2026-07-06 | image | cinematic_studio_2_5 | flat roof v2 re-roll, membrane/seams/flashing emphasized, job 1eb39661 | 2 | yes | site/assets/images/services-03.webp | in-use |
+| about-static.jpg | 2026-07-06 | image | cinematic_studio_2_5 | ridge-line macro precision detail, 3:4, job fb0462c1 | 2 | yes | site/assets/images/about-static.webp | in-use |

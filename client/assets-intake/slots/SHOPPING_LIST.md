@@ -46,7 +46,7 @@ Operator-provided (Logo.png): black+gold roofline logotype.
 
 # GENERATION slots (Higgsfield) — blocked on storyboard-approved=YES
 
-## services-01.jpg        [ ] filled
+## services-01.jpg        [x] filled
 treatment: static — 4:3, min 1600×1200
 Shingle roofing card + service block image.
 PROMPT ->
@@ -58,7 +58,7 @@ black, warm off-white, soft metallic gold accents — crisp natural light,
 realistic materials, ultra-sharp detail, cinematic composition, no
 people, no text, no watermarks, no logos
 
-## services-02.jpg        [ ] filled
+## services-02.jpg        [x] filled
 treatment: static — 4:3, min 1600×1200
 Aluminum gutters card + service block image.
 PROMPT ->
@@ -70,7 +70,7 @@ charcoal black, warm off-white, soft metallic gold accents — crisp
 natural light, realistic materials, ultra-sharp detail, cinematic
 composition, no people, no text, no watermarks, no logos
 
-## services-03.jpg        [ ] filled
+## services-03.jpg        [x] filled
 treatment: static — 4:3, min 1600×1200
 Flat roofing card + service block image.
 PROMPT ->
@@ -82,7 +82,7 @@ charcoal black, warm off-white, soft metallic gold accents — crisp
 natural light, realistic materials, ultra-sharp detail, cinematic
 composition, no people, no text, no watermarks, no logos
 
-## about-static.jpg       [ ] filled
+## about-static.jpg       [x] filled
 treatment: static — 3:4 portrait, min 1200×1600
 About section side image — craftsmanship detail, pairs with "Quality first. No shortcuts."
 PROMPT ->
