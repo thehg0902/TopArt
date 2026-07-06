@@ -10,7 +10,7 @@ Started: 2026-07-06
 | 1     | architecture | done    | -                         | 2026-07-06 |
 | 2     | design       | done    | HUMAN: approve style prev | 2026-07-06 |
 | 3     | content      | done    | -                         | 2026-07-06 |
-| 4     | media        | in-progress | HUMAN: fill slots/approve | -     |
+| 4     | media        | done    | HUMAN: fill slots/approve | 2026-07-06 |
 | 5     | build        | done    | -                         | 2026-07-06 |
 | 6     | qa           | done    | scripts must pass         | 2026-07-06 |
 | 7     | deploy       | in-progress | HUMAN: confirm deploy | -         |
@@ -23,6 +23,7 @@ Notes:
 - 2026-07-06 Phase 2: done — style approved via "continue pipeline".
 - 2026-07-06 Phase 3: done — copy in all 3 pages; register premium-direct; placeholders on phone/address/hours/testimonials.
 - 2026-07-06 Phase 4: shopping list written (5 image slots, operator path, credits 0). Gate stays open until slots filled via /ingest. Proceeding to Phase 5 with poster placeholders per operator consent.
+- 2026-07-06 Phase 4 DONE — operator set storyboard-approved on all rows; 4 slots generated (cinematic_studio_2_5, 10 credits total incl. 1 rejected re-roll, ledger complete); all 13 slots in-use. Sources resized to display-fit; logo quantized to 16KB; home 0.94MB, QA 0 FAIL re-verified; deployment branch re-split (76d2be0) + pushed with main.
 - 2026-07-06 Phase 7: deploy = Git branch `deployment` (site-only subtree split of site/, files at root), operator connects host. Split f763b53 pushed to origin/deployment; cleanliness-verified (no OS files). Redeploy after any site change: commit main → `git subtree split --prefix site main` → force-push result to refs/heads/deployment (branch name differs from deploy-split.sh default `production`). REMINDER before real traffic: domain still placeholder in sitemap.xml/robots.txt.
 - 2026-07-06 Phase 6 DONE. check.py 0 FAIL / 7 WARN (drift WARNs = aria-current + path depth, reviewed benign; 0.92MB home = headroom warning). Visual QA: 4 pages × 360/768/1280 — no h-scroll, landmarks + h1 everywhere; interactive checks passed earlier (nav toggle+Esc, form intercept, FAQ, hero intro→loop chain, gallery reveal, map). Manual review: facts operator-confirmed or paste-sourced with Google link; no invented claims; tel/href consistent. Testimonial placeholder cards replaced by reviews-band (real 4.9/196 stat + Google link); widget slot = HTML comment, wired later with privacy+CSP update in same change.
 - 2026-07-06 (later) Operator round 2: facts confirmed → placeholders cleared site-wide; review quotes rejected (live Google widget wanted — placeholder cards remain, the ONE open QA FAIL); forms stay disabled; real assets ingested (hero video pair intro-loop, 6-photo gallery section added, logo wired); map embedded; privacy finalized. check.py: 1 FAIL (testimonial placeholders — awaiting widget choice), 7 benign WARNs. Page 0.92MB/1.0 cap; hero videos 2.16MB/3 cap (post-ingest re-encode CRF26/27 — NOTE: /ingest --force resets them to CRF23 and busts the pair cap; re-apply or fix ingest ladder). Reveal-anim anchor-jump bug fixed in main.js. Phase 4: 9/13 slots in-use; services-01..03 + about-static await storyboard-approved=YES (operator asked to auto-generate; invariant requires their YES per row).
